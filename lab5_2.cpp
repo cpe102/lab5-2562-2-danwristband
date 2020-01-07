@@ -1,7 +1,26 @@
 #include<iostream>
+#include<string>
 using namespace std;
+string mixText(string text1,string text2){
+	int t1=text1.size() ,t2=text2.size();
+	int i=0;
+	string sum;
+	if(t1==t2){
+		while(i<t2)
+		{
+			sum=sum+text1[i]+text2[i];
+			i+=1;
+
+		}
+	return sum;
 
 
+	}
+	else {
+		return "E";
+	}
+
+}
 
 
 int main(){	
